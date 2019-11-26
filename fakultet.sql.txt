@@ -1,0 +1,4 @@
+SELECT f.Naziv, BrojStudenata
+FROM Omega.Fakultet f
+JOIN Omega.Student s ON f.ID = s.FAKULTETID
+GROUP BY f.ID
